@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('reset.css');
+
+
+
+:root{
+    --cor-fundo1: #6A9AB0;
+    --cor-fundo2: #001F3F;
+    --cor-texto: #E2F1E7;
+    --cor-fundo-card: #387478; 
+    font-size: 14px;
+}
+
+
+body{
+    font-family: "Lato", sans-serif;
+    /* background-color: var(--cor-fundo); */
+    background-image: linear-gradient(to bottom right,var(--cor-fundo1), var(--cor-fundo2));
+}
+
+.titulo-pag{
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+main{
+    padding: 20px;
+}
+
+h2, h3, strong{
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+h2{
+    font-size: 1.75rem;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.produtos-lista{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.produtos-lista .produto{
+    border: 1px solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:20px ;
+    padding: 10px;
+    gap: 15px;
+    background-color: var(--cor-fundo-card);
+    color: var(--cor-texto);
+    box-shadow: 0px 0px 10px 2px rgba(29, 27, 27, 0.477);
+    transition: 1s;
+
+}
+
+.produtos-lista .produto:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.produtos-lista .produto img{
+    width: 180px;
+    border-radius: 20px;
+
+}
+ .produtos-lista .produto span{
+    text-align: justify;
+ }
