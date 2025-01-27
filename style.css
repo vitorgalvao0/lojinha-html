@@ -32,6 +32,11 @@ a{
     transition: 0.3s;
 }
 
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ }
+
 body{
     font-family: "Lato", sans-serif;
     /* background-color: var(--cor-fundo); */
